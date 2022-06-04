@@ -4,7 +4,7 @@ const path = require("path");
 const { v4: uuidv4 } = require('uuid');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.urlencoded({extended: false}))
 app.use(express.json());
